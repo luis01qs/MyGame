@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\f408bd9f5fcffc44b2b4d64b232156d7\SYNC_RESOURCE-MyGame.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\SYNC_RESOURCE-MyGame" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DB4FA233-CAF6-3D5B-9867-65F6A40C19D0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

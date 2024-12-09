@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\MainMenuScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\GameScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\DifficultyScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\Walls.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\Particle.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\StatisticScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\MainMenuScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\GameScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\DifficultyScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\Walls.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\Particle.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Classes\StatisticScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\CloseNormal.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\CloseSelected.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\HelloWorld.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\backgrounds\background.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\backgrounds\menu_background.png">
+      <Filter>Resources\backgrounds</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\fonts\Aristo1.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\fonts\Bold.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\fonts\Regular.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\sprites\particle.png">
+      <Filter>Resources\sprites</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\Resources\sprites\particle2.png">
+      <Filter>Resources\sprites</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{C257C567-1569-32B3-89B6-94B156397E6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\backgrounds">
+      <UniqueIdentifier>{B0E53969-6400-3E65-912C-1C48BF89D67F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{E0095C45-5626-3A90-8589-5259415EC5EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{E51A2DAF-385B-3119-9B9F-66E7BEB77703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\sprites">
+      <UniqueIdentifier>{7B97369E-BCCE-3327-B551-9626BF6BF3C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F6ACBF6C-D959-3093-9DF4-29571C3F564B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{409F2081-0A20-3575-957F-27A32BBE0256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{B42A6F4B-3233-374D-A35F-27638D97373E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

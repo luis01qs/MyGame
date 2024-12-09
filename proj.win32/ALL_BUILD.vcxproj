@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0AFBA98E-396C-36C7-8E7E-AC380F3837A4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/luis0/Desktop/Mi Juego/MyGame/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/luis0/Desktop/Mi Juego/MyGame" "-BC:/Users/luis0/Desktop/Mi Juego/MyGame/proj.win32" --check-stamp-file "C:/Users/luis0/Desktop/Mi Juego/MyGame/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeCCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/luis0/Desktop/Mi Juego/MyGame/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/luis0/Desktop/Mi Juego/MyGame" "-BC:/Users/luis0/Desktop/Mi Juego/MyGame/proj.win32" --check-stamp-file "C:/Users/luis0/Desktop/Mi Juego/MyGame/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeCCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/luis0/Desktop/Mi Juego/MyGame/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/luis0/Desktop/Mi Juego/MyGame" "-BC:/Users/luis0/Desktop/Mi Juego/MyGame/proj.win32" --check-stamp-file "C:/Users/luis0/Desktop/Mi Juego/MyGame/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeCCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/luis0/Desktop/Mi Juego/MyGame/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/luis0/Desktop/Mi Juego/MyGame" "-BC:/Users/luis0/Desktop/Mi Juego/MyGame/proj.win32" --check-stamp-file "C:/Users/luis0/Desktop/Mi Juego/MyGame/proj.win32/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeRCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeCCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeCXXCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeRCCompiler.cmake;C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\3.31.0-rc2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{649F2954-8310-3B28-8875-D059CB33F8A3}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\MyGame.vcxproj">
+      <Project>{5F53ADD7-942C-3622-8851-7CE61D11D211}</Project>
+      <Name>MyGame</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\SYNC_RESOURCE-MyGame.vcxproj">
+      <Project>{E17C2F96-647E-37F2-9EE2-BB64B1B0487A}</Project>
+      <Name>SYNC_RESOURCE-MyGame</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{CA23B7DC-7AF4-358A-83C1-1FFA1ECD325E}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{B55077CC-C6C1-3931-BB7A-4BD605F5F478}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{C827A62E-1B6F-359D-89C4-04F0A31A84D4}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{90D92168-8116-32DD-A75B-5E21C1552BF0}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{D91C8D31-D6EB-3FC3-A65F-236E971F5CF9}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{083071EA-7B3D-3860-B67F-77D7BB07D3CC}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{43CF3771-E988-3E7E-A4BA-24732948AD62}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{43900513-D4B7-33FD-9B91-37A1C44BB001}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{C28998C4-A9D6-383F-9C0A-4003B134FBFD}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{3CBF681E-887F-3339-83FB-182BE88A74AD}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{28AB1FCA-8229-33AA-8051-358144815E2C}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\luis0\Desktop\Mi Juego\MyGame\proj.win32\engine\external\external.vcxproj">
+      <Project>{B2853EF1-1463-34FC-8131-C78625646FC1}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
