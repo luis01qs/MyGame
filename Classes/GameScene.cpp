@@ -11,15 +11,16 @@ USING_NS_CC;
 
 GameScene::GameScene(int level)
 {
-    this->level = level;  // Guardamos el valor recibido
+    // Save the parameter for the level of the game
+    this->level = level;
 }
 
 GameScene* GameScene::createScene(int level)
 {
-    GameScene* ret = new GameScene(level);  // Crear la escena usando el constructor personalizado
+    GameScene* ret = new GameScene(level);
     if (ret && ret->init())
     {
-        ret->autorelease();  // No olvides hacer autorelease para liberar la memoria automáticamente
+        ret->autorelease();
         return ret;
     }
     else
@@ -50,6 +51,7 @@ bool GameScene::init()
     // Create messages
     generateMessages();
 
+    // Physics of the world
     //this->getPhysicsWorld()->setDebugDrawMask(PhysicsWorld::DEBUGDRAW_ALL);
     this->getPhysicsWorld()->setGravity(Vec2(0, 0));
     this->getPhysicsWorld()->setFixedUpdateRate(1.0f / 240.0f); // Increase update rate for physics
@@ -175,12 +177,13 @@ void GameScene::generateRoom()
 
 // Walls
 
-void GameScene::createVerticalStaticWall(cocos2d::Vec2 start, cocos2d::Vec2 end, float thickness, bool exit) {
+void GameScene::createVerticalStaticWall(cocos2d::Vec2 start, cocos2d::Vec2 end, float thickness, bool exit) 
+{
     // Calculate the center position of the wall
     Vec2 center = (start + end) / 2;
 
     // Calculate the size of the wall
-    float length = start.distance(end);  // Length is the distance between start and end
+    float length = start.distance(end);
     Size size(length, thickness);
 
     // Create a node for the wall
@@ -190,16 +193,11 @@ void GameScene::createVerticalStaticWall(cocos2d::Vec2 start, cocos2d::Vec2 end,
     auto physicsBody = PhysicsBody::createBox(size);
 
     // Configure the physics body
-    physicsBody->setDynamic(false);  // Make it static (doesn't move)
-    // Wall physics body setup
-    physicsBody->setCategoryBitmask(0x01);      // Walls are in category 1
-    physicsBody->setContactTestBitmask(0x02);  // Walls trigger contact with particles (category 2)
-    physicsBody->setCollisionBitmask(0x02);    // Walls collide with particles (category 2)
-
-    // Make sure this collision mask is distinct from other objects (like walls)
+    physicsBody->setDynamic(false);
+    physicsBody->setCategoryBitmask(0x01);
+    physicsBody->setContactTestBitmask(0x02);
+    physicsBody->setCollisionBitmask(0x02);
     wall->setPhysicsBody(physicsBody);
-
-    // Position the wall
     wall->setPosition(center);
 
     // Calculate the angle of rotation and set it
@@ -215,7 +213,8 @@ void GameScene::createVerticalStaticWall(cocos2d::Vec2 start, cocos2d::Vec2 end,
         Vec2(-length / 2, thickness / 2)
     };
 
-    if (exit) {
+    if (exit) 
+    {
         drawNode->drawSolidPoly(vertices, 4, Color4F::GREEN);
         wall->setTag(10);
 
@@ -248,9 +247,7 @@ void GameScene::createVerticalStaticWall(cocos2d::Vec2 start, cocos2d::Vec2 end,
 
         _eventDispatcher->addEventListenerWithSceneGraphPriority(contactListener, wall);
     }
-    else {
-        drawNode->drawSolidPoly(vertices, 4, Color4F::WHITE);
-    }
+    else drawNode->drawSolidPoly(vertices, 4, Color4F::WHITE);
 
     wall->addChild(drawNode);
 
@@ -264,7 +261,7 @@ void GameScene::createHorizontalStaticWall(cocos2d::Vec2 start, cocos2d::Vec2 en
     Vec2 center = (start + end) / 2;
 
     // Calculate the size of the wall
-    float length = start.distance(end);  // Length is the distance between start and end
+    float length = start.distance(end);
     Size size(length, thickness);
 
     // Create a node for the wall
@@ -274,10 +271,10 @@ void GameScene::createHorizontalStaticWall(cocos2d::Vec2 start, cocos2d::Vec2 en
     auto physicsBody = PhysicsBody::createBox(size);
 
     // Configure the physics body
-    physicsBody->setDynamic(false);  // Make it static (doesn't move)
-    physicsBody->setContactTestBitmask(0xFFFFFFFF);  // Enable collision detection
-    physicsBody->setCategoryBitmask(0x01);      // Walls are in category 1
-    physicsBody->setContactTestBitmask(0x02);  // Walls trigger contact with particles (category 2)
+    physicsBody->setDynamic(false);
+    physicsBody->setContactTestBitmask(0xFFFFFFFF);
+    physicsBody->setCategoryBitmask(0x01);
+    physicsBody->setContactTestBitmask(0x02);
     physicsBody->setCollisionBitmask(0x02);
     wall->setPhysicsBody(physicsBody);
 
@@ -309,7 +306,7 @@ void GameScene::createRotatingWall(cocos2d::Vec2 start, cocos2d::Vec2 end, float
     Vec2 center = (start + end) / 2;
 
     // Calculate the size of the wall
-    float length = start.distance(end);  // Length is the distance between start and end
+    float length = start.distance(end);
     Size size(length, thickness);
 
     // Create a node for the wall
@@ -319,15 +316,13 @@ void GameScene::createRotatingWall(cocos2d::Vec2 start, cocos2d::Vec2 end, float
     auto physicsBody = PhysicsBody::createBox(size);
 
     // Configure the physics body
-    physicsBody->setDynamic(false);  // Make it static so it doesn't react to forces
-    physicsBody->setContactTestBitmask(0xFFFFFFFF);  // Enable collision detection
-    physicsBody->setRotationEnable(true);  // Allow rotation for the physics body
-    physicsBody->setCategoryBitmask(0x01);      // Walls are in category 1
-    physicsBody->setContactTestBitmask(0x02);  // Walls trigger contact with particles (category 2)
+    physicsBody->setDynamic(false);
+    physicsBody->setContactTestBitmask(0xFFFFFFFF);
+    physicsBody->setRotationEnable(true); 
+    physicsBody->setCategoryBitmask(0x01);
+    physicsBody->setContactTestBitmask(0x02);
     physicsBody->setCollisionBitmask(0x02);
     wall->setPhysicsBody(physicsBody);
-
-    // Position the wall
     wall->setPosition(center);
 
     // Calculate the angle of rotation and set it initially
@@ -369,7 +364,7 @@ void GameScene::createMovingWall(cocos2d::Vec2 start, cocos2d::Vec2 end, float t
     Vec2 center = (start + end) / 2;
 
     // Calculate the size of the wall
-    float length = start.distance(end);  // Length is the distance between start and end
+    float length = start.distance(end);
     Size size(length, thickness);
 
     // Create a node for the wall
@@ -379,10 +374,10 @@ void GameScene::createMovingWall(cocos2d::Vec2 start, cocos2d::Vec2 end, float t
     auto physicsBody = PhysicsBody::createBox(size);
 
     // Configure the physics body
-    physicsBody->setDynamic(false);  // Make it static so it doesn't react to forces
-    physicsBody->setContactTestBitmask(0xFFFFFFFF);  // Enable collision detection
-    physicsBody->setCategoryBitmask(0x01);      // Walls are in category 1
-    physicsBody->setContactTestBitmask(0x02);  // Walls trigger contact with particles (category 2)
+    physicsBody->setDynamic(false);
+    physicsBody->setContactTestBitmask(0xFFFFFFFF);
+    physicsBody->setCategoryBitmask(0x01);
+    physicsBody->setContactTestBitmask(0x02);
     physicsBody->setCollisionBitmask(0x02);
     wall->setPhysicsBody(physicsBody);
 

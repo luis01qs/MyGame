@@ -50,9 +50,6 @@ bool MainMenuScene::init()
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
-    // Music
-
-
     return true;
 }
 

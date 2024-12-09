@@ -29,28 +29,24 @@ Particle::Particle(Vec2 position)
     this->setPosition(position);
 
     // Define the isosceles triangle vertices
-    float base = sprite->getContentSize().width;  // Width of the triangle base
-    float height = sprite->getContentSize().height; // Height of the triangle
+    float base = sprite->getContentSize().width; 
+    float height = sprite->getContentSize().height;
     Vec2 vertices[] = {
-        Vec2(-base / 2, -height / 2), // Bottom-left corner
-        Vec2(base / 2, -height / 2),  // Bottom-right corner
-        Vec2(0, height / 2)           // Top vertex
+        Vec2(-base / 2, -height / 2),
+        Vec2(base / 2, -height / 2),
+        Vec2(0, height / 2)
     };
 
     // Add physics body as a polygon
     physicsBody = PhysicsBody::createPolygon(vertices, 3);
-    physicsBody->setDynamic(true);           // Make the particle dynamic
-    physicsBody->setRotationEnable(false);   // Disable automatic rotation
-    physicsBody->setGravityEnable(true);     // Optionally enable gravity
-    physicsBody->setLinearDamping(0.5f);     // Apply damping to the particle's motion
-    // Particle physics body setup
-    physicsBody->setCategoryBitmask(0x02);      // Particles are in category 2
-    physicsBody->setContactTestBitmask(0x01);  // Particles should only trigger contact with walls (category 1)
-    physicsBody->setCollisionBitmask(0x01);    // Particles should only collide with walls (category 1)
-
+    physicsBody->setDynamic(true);
+    physicsBody->setRotationEnable(false);
+    physicsBody->setGravityEnable(true);
+    physicsBody->setLinearDamping(0.5f);
+    physicsBody->setCategoryBitmask(0x02);
+    physicsBody->setContactTestBitmask(0x01);
+    physicsBody->setCollisionBitmask(0x01);
     physicsBody->setTag(100);
-    // Make sure this collision mask is distinct from other objects (like walls)
-
     sprite->setPhysicsBody(physicsBody);
 
     // Random
@@ -71,7 +67,6 @@ Particle::Particle(Vec2 position)
 bool Particle::init() 
 {
     if (!Node::init()) return false;
-    //scheduleUpdate();
     return true;
 }
 
