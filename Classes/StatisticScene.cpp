@@ -35,9 +35,14 @@ bool StatisticScene::init()
     auto visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
-    for (int i = 0; i < 10; ++i)
+    for (int i = 0; i < 5; ++i)
     {
-        setStatistics(solution[i], i + 1, Vec2(720, 720));
+        setStatistics(solution[i], i + 1, Vec2(450, 300 + 850 - 200 * i));
+    }
+
+    for (int i = 5; i < 10; ++i)
+    {
+        setStatistics(solution[i], i + 1, Vec2(150 + visibleSize.width / 2, 300 + 850 - 200 * (i - 5)));
     }
 
 	return true;

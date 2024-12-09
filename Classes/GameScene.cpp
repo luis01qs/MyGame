@@ -238,6 +238,7 @@ void GameScene::createVerticalStaticWall(cocos2d::Vec2 start, cocos2d::Vec2 end,
                     particleNode->setVisible(false);
                     particleNode->getPhysicsBody()->setEnabled(false);
                     solved++;
+                    auto backgroundAudioId = AudioEngine::play2d("audio/Finish.mp3", false, 8.0f);
                     updateSolved();
                 }
             }
@@ -494,7 +495,7 @@ void GameScene::handleUnscheduleParticle(Particle* particle)
 void GameScene::restartParticles()
 {
     if (iteration != 0) solutions.push_back(solved);
-    if (iteration != 0)
+    if (iteration == 10)
     {
         showStatistics();
         return;
@@ -630,9 +631,6 @@ void GameScene::mergeSolutions(std::vector<float>& a, std::vector<float>& b, con
 
 void GameScene::showStatistics()
 {
-    solutions.clear();
-    solutions = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-
     auto statisticScene = new StatisticScene(solutions);
     statisticScene->init();
     Director::getInstance()->replaceScene(TransitionFade::create(1.0f, statisticScene));

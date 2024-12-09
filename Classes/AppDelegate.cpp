@@ -120,18 +120,15 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
-   /*
+    // Audio
+    //auto backgroundAudioId2 = AudioEngine::play2d("audio/Finish.mp3", true, 1.0f);
+    auto backgroundAudioId = AudioEngine::play2d("audio/Song.mp3", true, 0.5f);
+
     // create a scene. it's an autorelease object
     auto scene = MainMenuScene::createScene();
 
     // run
     director->runWithScene(scene);
-    */
-
-    ///*
-    auto scene = GameScene::createScene(3);
-    director->runWithScene(scene);
-    //*/
 
     return true;
 }

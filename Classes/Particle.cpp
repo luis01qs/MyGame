@@ -59,7 +59,7 @@ Particle::Particle(Vec2 position)
     std::normal_distribution<> dist(0.0f, 6.0f);
 
     // Generate randomly the solution
-    this->vectorSize = 10;
+    this->vectorSize = 200;
     this->deltaAngle.resize(vectorSize);
     for (int i = 0; i < vectorSize; ++i)
     {
